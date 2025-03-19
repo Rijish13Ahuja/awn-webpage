@@ -1,0 +1,100 @@
+.footerContainer {
+  background-color: #157a74; /* Dark teal background */
+  color: white;
+  padding: 50px 60px; /* Adjusted padding */
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* Reduced space to bring sections closer */
+}
+
+/* Left Section */
+.footerLeft {
+  max-width: 320px;
+}
+
+.logo {
+  width: 110px;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 15px; /* Increased text size slightly */
+  line-height: 1.6;
+  color: #cfd8dc;
+  margin-bottom: 8px; /* Reduced space between text */
+}
+
+/* "FOLLOW US" Section */
+.followUsText {
+  font-size: 15px; /* Slightly bigger */
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  gap: 12px; /* Reduced space */
+}
+
+.socialIcon {
+  background-color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #157a74;
+  transition: background 0.3s ease;
+}
+
+.socialIcon:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Right Section - Quick Links */
+.footerLinks {
+  display: flex;
+  gap: 40px; /* Reduced spacing */
+}
+
+.linkSection {
+  min-width: 170px; /* Slightly increased */
+}
+
+.linkTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffb400;
+  margin-bottom: 6px; /* Reduced margin */
+}
+
+/* Fix: Scoped `ul`, `li`, `a` */
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 5px; /* Reduced space between links */
+}
+
+.footerLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px; /* Increased text size */
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+/* Removed Bottom Footer */

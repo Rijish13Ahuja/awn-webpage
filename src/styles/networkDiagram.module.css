@@ -1,0 +1,58 @@
+.networkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 50px 0;
+  height: 600px; /* Same height */
+}
+
+/* SVG now takes full width */
+.networkSvg {
+  width: 1200px; /* Increased width */
+  height: 600px;
+  position: absolute;
+}
+
+/* Outer Circle around the logo */
+.outerCircle {
+  stroke: #cfd8dc;
+  stroke-width: 5;
+  fill: white;
+}
+
+/* Inner Circle */
+.innerCircle {
+  stroke: #cfd8dc;
+  stroke-width: 2;
+  fill: white;
+}
+
+/* Straight, structured lines */
+.line {
+  stroke: #cfd8dc;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+}
+
+/* Small connecting dots */
+.dot {
+  fill: #cfd8dc;
+}
+
+/* End Containers */
+.container {
+  fill: white;
+  stroke: #cfd8dc;
+  stroke-width: 2;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .networkSvg {
+    width: 100%;
+    height: auto;
+  }
+}

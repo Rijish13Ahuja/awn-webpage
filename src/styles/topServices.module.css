@@ -1,0 +1,80 @@
+.topServices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 40px; /* Add spacing above the section */
+    border-radius: 10px;
+    padding-left: 50px;
+  }
+  
+  .topServicesTitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1A6D73;
+    margin-bottom: 10px;
+  }
+  
+/* Service Buttons Section */
+
+/* General layout for each section */
+.section {
+    margin-bottom: 40px;
+  }
+  
+  .serviceHeading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px; /* Space between heading and buttons */
+    text-align: start;
+    padding-left: 45px;
+  }
+  
+  /* Service Buttons Row */
+  .serviceButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Allow wrapping of buttons in case the screen is small */
+  }
+  
+  /* Style for each service button */
+  .serviceButton {
+    background-color: #E4E4E4; /* Default background */
+    color: black; /* Default text color */
+    font-size: 14px;
+    padding: 12px 20px; /* Adjust button size */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1 1 22%; /* Allow button to take up 22% of the row, flexibly */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    height: 50px;
+  }
+  
+/* Apply background color and white text to the first button of the first row */
+.serviceButtons > .serviceButton:nth-child(1) {
+    background-color: #1A6D73;
+    color: white;
+    border: none; /* Remove border for the first button */
+  }
+  
+  
+  /* Hover effect for buttons */
+  .serviceButton:hover {
+    background-color: #157a74;
+    color: white;
+    border-color: #157a74;
+  }
+  
+  .arrow {
+    margin-left: 10px;
+  }
+  

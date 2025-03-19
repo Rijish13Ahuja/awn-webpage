@@ -1,0 +1,111 @@
+.whyAwnWrapper {
+  margin: 50px 50px 0; /* Added top margin */
+}
+
+.whyAwnContainer {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Grey Section */
+.greySection {
+  flex: 1;
+  background-color: #e0e0e0;
+  min-height: 300px;
+}
+
+/* Right Content Section */
+.contentSection {
+  flex: 1;
+  background-color: #157a74;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.whyAwnHashtag {
+  font-size: 14px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.whyAwnTitle {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.whyAwnFeatures {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+/* Button */
+.registerBtn {
+  background-color: white;
+  color: #157a74;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.registerBtn:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .whyAwnWrapper {
+      margin: 50px 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .whyAwnWrapper {
+      margin: 50px 20px 0;
+  }
+
+  .whyAwnContainer {
+      flex-direction: column;
+  }
+
+  .greySection {
+      height: 150px;
+  }
+
+  .contentSection {
+      padding: 20px;
+  }
+
+  .whyAwnTitle {
+      font-size: 22px;
+  }
+
+  .whyAwnFeatures {
+      grid-template-columns: 1fr;
+  }
+}

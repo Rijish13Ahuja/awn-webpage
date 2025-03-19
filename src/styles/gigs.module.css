@@ -1,0 +1,113 @@
+/* Container for Gigs Section */
+.gigsSection {
+    margin-top: 40px;
+    padding: 0 20px;
+    padding-left: 50px;
+  }
+  
+  /* Heading Style */
+  .gigsHeading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px; /* Space between heading and subheading */
+    display: flex;
+    align-items: center;
+  }
+  
+  .gigsHashtag {
+    color: #157a74;
+    margin-right: 10px;
+  }
+  
+  
+.gigsTitle {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  .gigsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .gigCard {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .gigCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .gigImage {
+    height: 200px;
+    background-color: #e0e0e0;
+  }
+  
+  .gigContent {
+    padding: 16px;
+  }
+  
+  .gigName {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .gigDescription {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  
+  .gigRating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .star {
+    color: #ffca28;
+    margin-right: 5px;
+  }
+  
+  .ratingText {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .gigPrice {
+    font-weight: 500;
+    color: #1A6D73;
+    font-size: 20px;
+    font-weight:bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .gigsContainer {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gigsContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gigsContainer {
+      grid-template-columns: 1fr;
+    }
+  }
